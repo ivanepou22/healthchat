@@ -1,0 +1,200 @@
+.category-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 2rem 0;
+    font-family: poppins;
+}
+
+.category-section {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    padding: .5rem;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.white-text {
+    color: white;
+}
+
+.gray-text {
+    color: #8d8e91;
+}
+
+.red-bg {
+    background-color: #ff0000;
+}
+
+.blue-bg {
+    background-color: #166DFF;
+}
+
+
+.doctor-chat-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.category-section h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    padding: .5rem;
+    color: rgba(25, 50, 85, 0.76);
+    margin-top: 1.5rem;
+}
+
+.category-section p {
+    font-size: .9rem;
+    line-height: 1.5;
+    padding: .5rem;
+    color: #8d8e91;
+}
+
+.consultation-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+    height: 38px;
+    width: 190px;
+    padding: 0px;
+    margin: 1rem .5rem;
+    cursor: pointer;
+    background: -webkit-linear-gradient(top, rgb(51, 126, 255) 0%, rgb(0, 95, 255) 100%);
+    border: 1px none rgb(127, 149, 235);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    transition: background 150ms ease-in-out 0s;
+}
+
+.consultation-btn:hover {
+    background: -webkit-linear-gradient(top, rgb(0, 95, 255) 0%, rgb(51, 126, 255) 100%);
+    color: #e9eaec;
+}
+.consultation-btn a {
+    color: white !important;
+}
+
+
+.consultation-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    padding: 1.5rem;
+}
+
+.consultation-option {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    margin-top: .5rem;
+}
+
+/* Round checkbox */
+.round {
+    position: relative;
+  }
+
+  .round label {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 28px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 28px;
+  }
+
+  .round label:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 6px;
+    left: 7px;
+    opacity: 0;
+    position: absolute;
+    top: 8px;
+    transform: rotate(-45deg);
+    width: 12px;
+  }
+
+  .round input[type="checkbox"] {
+    visibility: hidden;
+  }
+
+  .round input[type="checkbox"]:checked + label {
+    background: -webkit-linear-gradient(top, rgb(51, 126, 255) 0%, rgb(0, 95, 255) 100%);
+    border-color: #66bb6a;
+  }
+
+  .round input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+  }
+  /* round checkbox end */
+
+  .doctor-consult-option {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    padding: .8rem 1.3rem;
+    border-radius: 10px;
+    width: 100%;
+    margin-right: 1rem;
+    color: rgba(25, 50, 85, 0.76);
+  }
+
+  .doctor-consult-option:hover {
+    background-color: #f5f5f5;
+  }
+  .chat-icon {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    object-fit: contain;
+    color: rgb(56, 119, 192);
+    background-color: #dae6fa;
+    border-radius: 50%;
+    font-size: 1rem;
+  }
+
+  @media only screen and (max-width: 768px){
+    .category-section-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .category-section h1 {
+        font-size: 1.5rem;
+    }
+    .category-section p {
+        font-size: .8rem;
+    }
+    .consultation-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+}
+

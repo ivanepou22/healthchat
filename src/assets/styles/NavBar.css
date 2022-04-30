@@ -1,0 +1,248 @@
+.border-bottom {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.01);
+}
+
+.navbar-container-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+    font-size: 2rem;
+    color: #166DFF;
+}
+.header-logo a {
+    font-size: 2rem !important;
+    color: #166DFF !important;
+}
+
+.menu-bars {
+    cursor: pointer;
+    font-size: 1.8rem;
+    display: none;
+}
+
+.menu-close {
+    cursor: pointer;
+    font-size: 1.8rem;
+    display: none;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: .3rem;
+    font-size: 1.5rem;
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.main-menu ul {
+    display:  flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    height: 100%;
+}
+
+ul li {
+    list-style: none;
+}
+ a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+    color: rgba(25, 50, 85, 0.76);
+}
+a:hover {
+    color: rgba(25, 50, 85, 0.9);
+}
+
+.login-find-doctor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.link-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .4rem .4rem;
+    cursor: pointer;
+    background: none rgb(255, 255, 255);
+    border: 1px solid rgb(217, 220, 225);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(25, 50, 85, 0.76);
+    border-radius: 6px;
+    box-shadow: rgb(0 23 55 / 5%) 0px 1px 0px 0px;
+    transition: background 150ms ease-in-out 0s;
+    margin-left: 1rem;
+}
+
+.find-doctors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+    padding: .4rem .4rem;
+    cursor: pointer;
+    background: -webkit-linear-gradient(top, rgb(51, 126, 255) 0%, rgb(0, 95, 255) 100%);
+    border: 1px none rgb(127, 149, 235);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    transition: background 150ms ease-in-out 0s;
+    margin-right: .5rem;
+}
+
+.find-doctors:hover {
+    background: -webkit-linear-gradient(top, rgb(0, 95, 255) 0%, rgb(51, 126, 255) 100%);
+    color: #e9eaec;
+}
+.stethoscope {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 768px){
+    .header-logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .menu-bars {
+        display: block;
+    }
+    .header-menu {
+        display: none;
+    }
+
+    .menu-close {
+        display: block;
+    }
+
+    .close-menu {
+        display: none;
+    }
+
+    .navbar-container-main {
+        position: relative;
+    }
+    .header-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 65px;
+        width: 100%;
+        z-index: 1000;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        background-color: #fff;
+    }
+
+    .main-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .main-menu .main-ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .main-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-menu ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .main-menu ul li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .login-find-doctor {
+        display: flex;
+        flex-direction: row;
+        gap: .5rem;
+        width: 100%;
+    }
+
+    .login-find-doctor .link-login {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .login-find-doctor .find-doctors {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .find-doctors .stethoscope {
+        display: none;
+    }
+
+    .close-menu-bar {
+        display: none;
+    }
+}
