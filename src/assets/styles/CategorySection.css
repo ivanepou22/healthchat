@@ -82,8 +82,8 @@
     transition: background 150ms ease-in-out 0s;
 }
 
-.consultation-btn:hover {
-    background: -webkit-linear-gradient(top, rgb(0, 95, 255) 0%, rgb(51, 126, 255) 100%);
+.consultation-btn:hover a {
+    background: -webkit-linear-gradient(top, rgb(0, 95, 255) 0%, rgb(21, 93, 218) 100%);
     color: #e9eaec;
 }
 .consultation-btn a {

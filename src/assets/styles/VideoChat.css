@@ -105,6 +105,16 @@
     color: #fff !important;
 }
 
+@media only screen and (max-width: 992px){
+    .btn-search span {
+        display: none;
+    }
+
+    .search-section input {
+        padding: 1rem 1rem 1rem 2rem;
+    }
+}
+
 @media only screen and (max-width: 768px){
     .video-section-container{
         display: flex;
