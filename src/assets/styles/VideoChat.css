@@ -113,6 +113,13 @@
     .search-section input {
         padding: 1rem 1rem 1rem 2rem;
     }
+.search-section {
+    position: relative;
+}
+    .btn-search {
+        position: absolute;
+        right: 45px;
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -126,5 +133,15 @@
     .video-section h1 {
         font-size: 1.5rem;
     }
+}
+
+@media only screen and (max-width: 320px){
+    .search-section {
+        position: relative;
+    }
+        .btn-search {
+            position: absolute;
+            right: 0;
+        }
 }
 

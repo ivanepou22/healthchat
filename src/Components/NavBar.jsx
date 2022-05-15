@@ -4,6 +4,7 @@ import { RiStethoscopeFill } from 'react-icons/ri'
 import { VscThreeBars } from 'react-icons/vsc'
 import { AiOutlineClose } from 'react-icons/ai'
 import '../assets/styles/NavBar.css'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
     const [isOpen, setIsOpen] = React.useState(false)
@@ -18,9 +19,9 @@ const NavBar = () => {
                     <div className="col-12">
                         <div className="navbar-container-main">
                             <div className="header-logo">
-                                <a href="#/">
+                                <Link to="/">
                                     <RiShieldCrossLine />
-                                </a>
+                                </Link>
                                 <div onClick={handleClick} className={`menu-bars ${isOpen ? 'close-menu' : ''}`}>
                                     <VscThreeBars />
                                 </div>
@@ -33,31 +34,31 @@ const NavBar = () => {
                                     <div className="main-ul">
                                         <ul>
                                             <li>
-                                                <a href="#/">Home</a>
+                                                <Link to="/">Home</Link>
                                             </li>
                                             <li>
-                                                <a href="#/">About</a>
+                                                <Link to="/about">About</Link>
                                             </li>
                                             <li>
-                                                <a href="#/">Services</a>
+                                                <Link to="/services">Services</Link>
                                             </li>
                                             <li>
-                                                <a href="#/">Contact</a>
+                                                <Link to="/contact">Contact</Link>
                                             </li>
                                             <li>
-                                                <a href="#/">Consultations</a>
+                                                <Link to="/consultations">Consultations</Link>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div className="login-find-doctor">
-                                    <a href="#/" className='link-login'>
+                                    <Link to="#/" className='link-login'>
                                         Login/Signup
-                                    </a>
-                                    <a href="#/" className='find-doctors'>
+                                    </Link>
+                                    <Link to="#/" className='find-doctors'>
                                         <RiStethoscopeFill className='stethoscope' />
                                         Find Doctors
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

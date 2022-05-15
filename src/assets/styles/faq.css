@@ -1,0 +1,108 @@
+.faq-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    font-family: poppins;
+    margin-top: 2rem;
+}
+
+.faq-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.faq-title h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgba(25, 50, 85, 0.76);
+    font-family: poppins;
+    width: 40%;
+    line-height: 1.5;
+}
+
+.faq-title p {
+    font-size: .9rem;
+    color: #8d8e91;
+    text-align: center;
+    font-weight: 500;
+    width: 60%;
+    color: rgba(25, 50, 85, 0.5);
+    font-family: poppins;
+}
+
+.faq-main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.faq-image {
+    width: 40%;
+}
+
+.faq-image img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.faq-content {
+    flex: 1;
+}
+
+.accordion-item {
+    border-left:  none !important;
+    border-right: none !important;
+
+}
+
+.accordion-button {
+    font-size: .95rem !important;
+    color: rgba(25, 50, 85, 0.85) !important;
+}
+
+.accordion-body {
+    border: none !important;
+    font-size: .8rem;
+    color: #8d8e91;
+    font-weight: 500;
+    color: rgba(25, 50, 85, 0.5);
+    font-family: poppins;
+}
+
+@media only screen and (max-width: 992px){
+    .faq-main-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .faq-image, .faq-content{
+        width: 100%;
+    }
+
+    .faq-title h1 , .faq-title p{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    .faq-title h1 , .faq-title p{
+        width: 100%;
+    }
+
+    .faq-title h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+

@@ -7,6 +7,7 @@ import Specialities from '../Components/Specialities';
 import VideoChat from '../Components/VideoChat';
 import TrustSection from '../Components/TrustSection';
 import Footer from '../Components/Footer';
+import FrequentlyAskedQuestions from '../Components/FrequentlyAskedQuestions';
 
 const Home = () => {
     return (
@@ -18,6 +19,7 @@ const Home = () => {
             <CategorySection />
             <Specialities />
             <TrustSection />
+            <FrequentlyAskedQuestions />
             <Footer />
         </>
     )

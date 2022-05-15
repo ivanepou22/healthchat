@@ -33,6 +33,42 @@ body {
   color: #61dafb;
 }
 
+.height-100vh {
+  height: 100vh;
+}
+
+.height-90vh {
+  height: 90vh;
+}
+
+.height-80vh {
+  height: 80vh;
+}
+
+.height-70vh {
+  height: 70vh;
+}
+
+.height-60vh {
+  height: 60vh;
+}
+
+.height-50vh {
+  height: 50vh;
+}
+
+.height-40vh {
+  height: 40vh;
+}
+
+.height-30vh {
+  height: 30vh;
+}
+
+.height-20vh {
+  height: 20vh;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
